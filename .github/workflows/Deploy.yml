@@ -37,4 +37,4 @@ jobs:
       - name: Create Build Folder
         uses: yarn build
       - name: Deploy to Surge
-        uses: surge ./build https://mubashar-covid-19-tracker-app.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        uses: surge ./build https://mubashar-covid-19-tracker-app.surge.sh/ --token --token ${{secrets.SURGE_TOKEN}}
